@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,8 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Ajeng Candra Lokasari | Portofolio",
-  description: "Portofolio Ajeng Candra Lokasari, siswi SMK calon junior Web developer di Kelas Industri UBIG.",
+title: {
+default: "Ajeng Candra Lokasari | Portofolio",
+template: "%s | Ajeng Candra Lokasari",
+},
+description: "Portofolio Ajeng Candra Lokasari, siswa SMK calon Junior Web Developer di Kelas Industri UBIG.",
 };
 
 export default function RootLayout({ children }) {
@@ -24,9 +28,9 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-latar text-gray-800">
-        <div className="flex-grow">
-          {children}
-        </div>
+        
+        <Navbar />
+        {children}
         <Footer />
       </body>
     </html>

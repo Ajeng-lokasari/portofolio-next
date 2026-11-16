@@ -1,7 +1,8 @@
 export default function Footer() {
+  const tahun = new Date().getFullYear();
   return (
-    <footer className="mt-auto bg-utama py-6 text-center text-sm text-white">
-      <p>&copy; {new Date().getFullYear()} Ajeng Candra Lokasari. Dibuat dengan Next.js di Kelas Industri UBIG.</p>
+    <footer className="mt-auto bg-utama py-6 text-center text-center text-latar">
+      <p>&copy; {tahun} Ajeng Candra Lokasari. Dibuat dengan Next.js saat Pra Magang di UBIG.</p>
     </footer>
   );
 }
