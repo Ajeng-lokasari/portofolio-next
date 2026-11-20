@@ -18,7 +18,7 @@ export const proyek = [
         kategori: "Flutter",
         minggu: "tes UBIG",
         gambar: "/proyek/proyek-simmas.png",
-        deskripsi: "Sistem Informasi Manajemen Magang siswa.",
+        deskripsi: "Duplikasi Sistem Informasi Manajemen Magang siswa.",
         fitur: [
             "Banyakk, ada Dashboard Admin",
             "Dashboard Guru",
@@ -67,7 +67,7 @@ export const proyek = [
     {
         slug: "web-eco",
         judul: "Webstie Ecocycle",
-        kategori: "HTML-CSS-JavaScript",
+        kategori: "CSS",
         minggu: "Saat kelas 10",
         gambar: "/proyek/proyek-eco.png",
         deskripsi: "Website yang dibuat saat kelas 10 untuk menyelesaikan tugas PLH berkelompok.",

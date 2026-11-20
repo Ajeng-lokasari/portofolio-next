@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import TombolTema from "./TombolTema";
 
 
 
@@ -16,7 +17,7 @@ export default function Navbar () {
     const pathname = usePathname();
     return (
         <header className="bg-utama text-white">
-            <nav className="mx-auto flex max-w-5xl flex-col gap-3 px-4 py-4 md:flex-row md:items-center md:justify-between">
+            <nav className="mx-auto flex w-full max-w-5xl flex-col gap-3 px-4 py-3 md:flex-row md:items-center md:justify-between">
                 <Link href="/" className="textx1 font-bold">
                 Ajeng Candra Lokasari</Link>
                 <ul className="flex flex-wrap gap-x-5 gap-y-2">
@@ -39,6 +40,7 @@ export default function Navbar () {
                             );
                     })}        
                 </ul>
+                <TombolTema />
             </nav>
         </header>
     );

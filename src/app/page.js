@@ -18,15 +18,13 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-5xl space-y-10 px-4 py-10">
       
-      {/* Bagian Hero */}
       <Hero
         nama="Ajeng Candra Lokasari"
         tagline="Siswa kelas XI PPLG, calon Junior Web Developer di Kelas Industri UBIG."
       />
 
-      {/* Bagian Keahlian */}
       <section>
-        <h2 className="mb-4 text-2xl font-bold text-utama">Keahlian</h2>
+        <h2 className="mb-4 text-2xl font-bold text-utama dark:text-sky-200">Keahlian</h2>
         <div className="grid gap-4 md:grid-cols-3">
           {skills.map((skill) => (
             <SkillCard key={skill.nama} nama={skill.nama} level={skill.level} />
@@ -34,9 +32,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Bagian Proyek Terbaru */}
       <section>
-        <h2 className="mb-4 text-2xl font-bold text-utama">Proyek Terbaru</h2>
+        <h2 className="mb-4 text-2xl font-bold text-utama dark:text-sky-200">Proyek Terbaru</h2>
         <div className="grid gap-6 md:grid-cols-3">
           {proyekTerbaru.map((item) => (
             <ProyekCard key={item.slug} proyek={item} />

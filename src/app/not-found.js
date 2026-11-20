@@ -13,11 +13,11 @@ export default function NotFound() {
                 404
             </h1>
 
-            <h2 className="mt-4 text-2xl font-bold text-utama md:text-3xl">
+            <h2 className="mt-4 text-2xl font-bold text-utama dark:text-sky-200 md:text-3xl">
                 Halaman tidak ditemukan
             </h2>
 
-            <p className="mt-2 text-gray-600">
+            <p className="mt-2 text-gray-600 dark:text-gray-400">
                 Alamat yang kamu buka tidak ada atau sudah dipindahkan.
             </p>
 
