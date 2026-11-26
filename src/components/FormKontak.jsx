@@ -3,9 +3,9 @@
 import { useState } from "react";
 
 const kelasInput =
-  "mt-1 w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 p-2";
+  "mt-1 w-full rounded-lg border border-inputbg-card p-2";
 
-const kelasError = "mt-1 text-sm text-aksen dark:text-red-300";
+const kelasError = "mt-1 text-sm text-aksen";
 
 export default function FormKontak() {
   const [nama, setNama] = useState("");
@@ -79,7 +79,7 @@ export default function FormKontak() {
       </div>
 
       <div>
-        <label htmlFor="hp" className="block font-semibold text-gray-800 dark:text-gray-100">
+        <label htmlFor="hp" className="block font-semibold text-foreground">
           Nomor HP
         </label>
         <input
@@ -95,7 +95,7 @@ export default function FormKontak() {
       </div>
 
       <div>
-        <label htmlFor="keperluan" className="block font-semibold text-gray-800 dark:text-gray-100">
+        <label htmlFor="keperluan" className="block font-semibold text-foreground">
           Keperluan
         </label>
         <select
@@ -114,7 +114,7 @@ export default function FormKontak() {
       </div>
 
       <div>
-        <label htmlFor="pesan" className="block font-semibold text-gray-800 dark:text-gray-100">
+        <label htmlFor="pesan" className="block font-semibold text-foreground">
           Pesan
         </label>
         <textarea

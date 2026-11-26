@@ -10,8 +10,8 @@ export default function Kontak() {
   return (
     <main className="mx-auto w-full max-w-5xl px-4 py-10 space-y-6">
       <div>
-        <h1 className="text-3xl font-bold text-utama dark:text-sky-200 md:text-4xl">Hubungi Saya</h1>
-        <p className="mt-2 text-lg text-gray-700 dark:text-gray-300">
+        <h1 className="text-3xl font-bold text-primary md:text-4xl">Hubungi Saya</h1>
+        <p className="mt-2 text-lg text-muted-foreground">
           Punya pertanyaan atau ingin bekerja sama? Isi form berikut.
         </p>
       </div>
@@ -25,7 +25,7 @@ export default function Kontak() {
 
         <div>
           <Kartu>
-            <h2 className="text-xl font-bold text-utama dark:text-sky-200">Temukan Saya di</h2>
+            <h2 className="text-xl font-bold text-primary">Temukan Saya di</h2>
             <div className="mt-3 flex flex-col space-y-2 text-red-700">
               <a
                 href="https://github.com/Ajeng-lokasari"
