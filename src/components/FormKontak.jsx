@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { Button } from "@/components/ui/button"; 
 
 const kelasInput =
-  "mt-1 w-full rounded-lg border border-inputbg-card p-2";
+  "mt-1 w-full rounded-lg border border-input bg-card p-2";
 
 const kelasError = "mt-1 text-sm text-aksen";
 
@@ -129,12 +130,9 @@ export default function FormKontak() {
         {error.pesan && <p className={kelasError}>{error.pesan}</p>}
       </div>
 
-      <button
-        type="submit"
-        className="rounded-lg bg-red-700 px-5 py-2.5 font-semibold text-white transition hover:bg-red-800"
-      >
+      <Button type="submit" size="lg">
         Kirim Pesan
-      </button>
+      </Button>
 
       {berhasil && (
         <p className="rounded-lg bg-green-100 p-3 text-green-800 dark:bg-green-900 dark:text-green-100">
