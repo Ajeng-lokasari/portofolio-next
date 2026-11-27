@@ -56,13 +56,7 @@ export default function Tentang() {
                 </Kartu>
             </div>
             
-            <Kartu judul="Keahlian">
-                <div className="grid gap-4 md:grid-cols-3">
-                  {skills.map((skill) => (
-                    <SkillCard key={skill.nama} nama={skill.nama} level={skill.level} />
-                  ))}
-                </div>
-            </Kartu>
+          
             
             <Kartu judul="Jadwal Belajar">
                 <div className="overflow-x-auto">

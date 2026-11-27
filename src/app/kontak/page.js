@@ -1,5 +1,5 @@
 import FormKontak from "@/components/FormKontak";
-import Kartu from "@/components/Kartu";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata = {
   title: "Kontak",
@@ -16,34 +16,41 @@ export default function Kontak() {
         </p>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-3">
-        <div className="md:col-span-2">
-          <Kartu>
+      {/* Pembungkus grid agar form dan info kontak tersusun rapi berdampingan */}
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <Card className="md:col-span-2">
+          <CardContent className="pt-6">
             <FormKontak />
-          </Kartu>
-        </div>
+          </CardContent>
+        </Card>
 
-        <div>
-          <Kartu>
-            <h2 className="text-xl font-bold text-primary">Temukan Saya di</h2>
-            <div className="mt-3 flex flex-col space-y-2 text-red-700">
-              <a
-                href="https://github.com/Ajeng-lokasari"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline"
-              >
-                GitHub
-              </a>
-              <a
-                href="mailto:butterflydark13@gmail.com"
-                className="break-all hover:underline"
-              >
-                butterflydark13@gmail.com
-              </a>
-            </div>
-          </Kartu>
-        </div>
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-2xl font-bold text-primary">Temukan Saya di</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="space-y-2">
+              <li>
+                <a 
+                  href="https://github.com/Ajeng-lokasari" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-aksen hover:underline"
+                >
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="mailto:darkbutterfly13@gmail.com" 
+                  className="text-aksen hover:underline"
+                >
+                  darkbutterfly13@gmail.com
+                </a>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
       </div>
     </main>
   );

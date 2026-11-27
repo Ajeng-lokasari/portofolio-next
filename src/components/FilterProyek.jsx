@@ -5,8 +5,6 @@ import ProyekCard from "@/components/ProyekCard";
 import { Button } from "./ui/button";
 
 const daftarKategori = ["Semua", "HTML", "CSS", "JavaScript", "Next.js"];
-const tombolBiasa = "rounded-full border border-utama dark:border-sky-200 px-4 py-1 text-sm font-semibold text-primary";
-const tombolAktif = "rounded-full border border-aksen bg-aksen px-4 py-1 text-sm font-semibold text-white"
 
 export default function FilterProyek ({proyek}) {
     const [kategori, setKategori] = useState("Semua");

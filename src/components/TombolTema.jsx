@@ -2,9 +2,13 @@
 
 import { useState } from "react";
 import { useEffect } from "react";
+import { Button} from "@/components/ui/button";
 
 export default function TombolTema() {
-    useEffect(() => {
+
+  const [gelap, setGelap] = useState(false);
+  
+  useEffect(() => {
         if(localStorage.getItem("tema") === "gelap") {
             document.documentElement.classList.add("dark");
         }
@@ -16,13 +20,8 @@ export default function TombolTema() {
   }
 
   return (
-    <button
-      type="button"
-      onClick={gantiTema}
-      className="w-full shrink-0 whitespace-nowrap rounded-lg border border-white px-3 py-1 text-center text-sm font-semibold text-white hover:border-aksen hover:bg-aksen md:w-28"
-    >
-      <span className="dark:hidden">Mode Gelap</span>
-      <span className="hidden dark:inline">Mode Terang</span>
-    </button>
+    <Button variant="outline" onClick={gantiTema} className="border-white bg-transparent text-white hover:bg-aksen hover:text-white">
+      {gelap ? "Mode Terang" : "Mode Gelap"}
+    </Button>
   );
 }
